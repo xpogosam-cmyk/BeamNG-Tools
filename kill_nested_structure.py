@@ -1,7 +1,9 @@
 import os
 import shutil
 
-base_dir = r"C:\Users\xpogo\Personal Files\BeamNG Projects\vehicle files\a-vehicles-0.37"
+# Base directories
+#Specify the file path you wish to use as a source
+base_dir = r"C:\Users"
 
 # Loop through each vehicle directory
 for vehicle_name in os.listdir(base_dir):
