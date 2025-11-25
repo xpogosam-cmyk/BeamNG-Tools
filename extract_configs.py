@@ -1,9 +1,11 @@
 import os
 import shutil
 
+
 # Base directories
-source_dir = r"C:\Users\xpogo\AppData\Local\BeamNG\BeamNG.drive\current\mods\unpacked\agenty_global_values_tuning"
-target_dir = r"C:\Users\xpogo\AppData\Local\BeamNG\BeamNG.drive\current\mods\unpacked\agenty_global_values_tuning\configs"
+#Specify the file path you wish to use as a source and where you want it
+source_dir = r"C:\Users\NAMEHERE\AppData\Local\BeamNG\BeamNG.drive\current\mods"
+target_dir = r"C:\Users\NAMEHERE\AppData\Local\BeamNG\BeamNG.drive\current\mods"
 
 # Walk through all files in source_dir
 for root, dirs, files in os.walk(source_dir):
@@ -18,3 +20,4 @@ for root, dirs, files in os.walk(source_dir):
             # Copy the file
             shutil.move(os.path.join(root, file), os.path.join(dest_folder, file))
             print(f"Copied: {file} to {dest_folder}")
+
